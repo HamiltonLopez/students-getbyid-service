@@ -1,6 +1,8 @@
 # Etapa 1: build
 FROM golang:1.24.2 AS builder
 
+LABEL maintainer="Hamilton <hamilt727@gmail.com>"
+
 WORKDIR /app
 
 COPY go.mod go.sum ./
